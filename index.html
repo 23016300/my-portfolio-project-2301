@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nkhelebeni Lorrick | CS Student & Future AI Engineer</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    .section { display: none; }
+    .active-section { display: block; }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <h1>Nkhelebeni Lorrick</h1>
+      <ul class="nav-links">
+        <li><a href="#home" onclick="showSection('home')">Home</a></li>
+        <li><a href="#about" onclick="showSection('about')">About</a></li>
+        <li><a href="#projects" onclick="showSection('projects')">Projects</a></li>
+        <li><a href="#contact" onclick="showSection('contact')">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="section active-section home">
+      <div class="bio-container">
+        <div>
+          <h2>Welcome to the big boy's website!</h2>
+          <p>I’m Nkhelebeni Lorrick, a Computer Science student passionate about solving problems througn coding, user-centered design, and building smart, interactive systems.</p>
+        </div>
+        <img src="ZWIALA.jpg" alt="Nkhelebeni Lorrick" class="bio-img" />
+      </div>
+    </section>
+
+    <section id="about" class="section about">
+      <h2>About Me</h2>
+      <p>I am a second-year Computer Science student currently learning about solving problems through(coding)and Human-Computer Interaction. I'm interested in how people use technology and how to make those experiences better through design. I enjoy coding with HTML/CSS and exploring new tech tools. It’s challenging, but fun!</p>
+    </section>
+
+    <section id="projects" class="section projects">
+      <h2>Projects</h2>
+      <div class="project-grid">
+        <div class="project-card">
+          <img src="https://via.placeholder.com/300x200?text=Pizza+Ordering+System" alt="Pizza Ordering Project">
+          <h3>PizzaOrdering</h3>
+          <p>Tools: NetBeans, Apache, Java</p>
+        </div>
+        <div class="project-card">
+          <img src="https://via.placeholder.com/300x200?text=TicTac+Game" alt="TicTac Game">
+          <h3>TicTacGame</h3>
+          <p>Tools: NetBeans, Apache, Java</p>
+        </div>
+        <div class="project-card">
+          <img src="https://via.placeholder.com/300x200?text=Personal+Blog" alt="Personal Blog">
+          <h3>Personal Blog</h3>
+          <p>A clean blog layout for sharing ideas.</p>
+          <p>Tools: HTML, CSS</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact">
+      <h2>Contact Me</h2>
+      <p>Email Address: <a href="mailto:zwialankhelebeni0@gmail.com">zwialankhelebeni0@gmail.com</a></p>
+      <p>GitHub: <a href="mailto:23016300@mvula.univen.ac.za">https://github.com/23016300/project2301.git</a></p>
+      <p>LinkedIn: <a href="mailto:zwialankhelebeni0@gmail.com">zwialankhelebeni0@gmail.com</a></p>
+
+      <div class="contact-footer">
+        <p>&copy; 2025 Nkhelebeni Lorrick. All rights reserved.</p>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    function showSection(id) {
+      const sections = document.querySelectorAll('.section');
+      sections.forEach(section => section.classList.remove('active-section'));
+      document.getElementById(id).classList.add('active-section');
+    }
+  </script>
+</body>
+</html>
